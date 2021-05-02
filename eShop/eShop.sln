@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.Api", "eShop.Api\eSho
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FEFF7F5F-2ECE-4277-8ECA-8E3DE1E948C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Application", "eShop.Application\eShop.Application.csproj", "{545F2BA7-830A-4FE3-904C-5247632D7570}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.Application", "eShop.Application\eShop.Application.csproj", "{545F2BA7-830A-4FE3-904C-5247632D7570}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Domain", "eShop.Domain\eShop.Domain.csproj", "{CE78FB9F-B8CA-43FD-AA24-205065A56B5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.Domain", "eShop.Domain\eShop.Domain.csproj", "{CE78FB9F-B8CA-43FD-AA24-205065A56B5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShop.Infrastructure", "eShop.Infrastructure\eShop.Infrastructure.csproj", "{330BC5ED-8189-41DB-A2C4-8B999F16EADC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.Infrastructure", "eShop.Infrastructure\eShop.Infrastructure.csproj", "{330BC5ED-8189-41DB-A2C4-8B999F16EADC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
