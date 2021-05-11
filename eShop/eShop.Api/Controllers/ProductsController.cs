@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using eShop.Application.ServiceInterfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eShop.Api.Controllers
@@ -8,14 +9,18 @@ namespace eShop.Api.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
+        private readonly IProductService _productService;
+
+        public ProductsController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         [HttpGet]
         [Route("")]
         public async Task<IActionResult> GetProducts()
         {
-            var prod1 = new {Name = "Laptop", Price = 100, Color = "Red"};
-            var prod2 = new {Name = "PC", Price = 23, Color = "Blue"};
-            var prod3 = new {Name = "Mouse", Price = 432, Color = "Black"};
-            var products = new List<object>{prod1, prod2, prod3};
+            var products = await _productService.GetAllProducts();
             return Ok(products);
         }
     }
